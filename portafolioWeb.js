@@ -1,10 +1,10 @@
 document.querySelectorAll(".foto").forEach(img => {
-  const strength = 15; // intensidad del movimiento/inclinación
+  const strength = 15; 
 
   img.addEventListener("mousemove", e => {
     let rect = img.getBoundingClientRect();
-    let x = e.clientX - rect.left; // cursor X dentro de la imagen
-    let y = e.clientY - rect.top;  // cursor Y dentro de la imagen
+    let x = e.clientX - rect.left; 
+    let y = e.clientY - rect.top;  
 
     let rotateX = ((y / rect.height) - 0.5) * -strength * 2;
     let rotateY = ((x / rect.width) - 0.5) * strength * 2;
@@ -18,9 +18,9 @@ document.querySelectorAll(".foto").forEach(img => {
 });
 
 document.querySelectorAll(".proyecto").forEach(proyecto => {
-  let fotoDiv = proyecto.querySelector(".divFoto img"); // imagen dentro del proyecto
-  let descripcion = proyecto.querySelector(".Descripcion"); // texto español
-  let descripcionEng = proyecto.querySelector(".DescripcionIngles"); // texto inglés
+  let fotoDiv = proyecto.querySelector(".divFoto img"); 
+  let descripcion = proyecto.querySelector(".Descripcion"); 
+  let descripcionEng = proyecto.querySelector(".DescripcionIngles"); 
   let panelIzq = proyecto.querySelector(".panel-izquierdo");  
   let panelImg = proyecto.querySelector(".imgPanel");
   let panelDer = proyecto.querySelector(".panel-derecho");
@@ -28,13 +28,10 @@ document.querySelectorAll(".proyecto").forEach(proyecto => {
   fotoDiv.addEventListener("click", () => {
     let src = fotoDiv.getAttribute("src");
 
-    // activar paneles con la imagen
     panelImg.setAttribute("src", src);
     panelIzq.classList.add("active");
     panelDer.classList.add("active");
 
-    // mostrar descripción de este proyecto
-    //descripcion.style.display = "block";
    
   });
 
@@ -43,10 +40,7 @@ document.querySelectorAll(".proyecto").forEach(proyecto => {
     panelDer.classList.remove("active");
     panelImg.setAttribute("src", "");
 
-    /*
-    descripcion.style.display = "none";
-    descripcionEng.style.display = "none";
-    */
+
   });
 });
 
