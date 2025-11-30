@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio web</title>
+    <link rel="stylesheet" href="portafolioWeb.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img src="./pics/fondo.png"  class="fondo"> 
+    <div id="sideNav">
+
+        <div class="icon" id="github" onclick="window.open('https://github.com/t4k020')">
+            
+                <span class="fa-brands fa-github " ></span>
+          
+        </div>
+
+        <div class="icon" id="linkedin" onclick="window.open('https://www.linkedin.com/in/gustavo-daniel-ventura-llanos/')">
+            <span class="fa-brands fa-linkedin"></span>
+        </div>
+
+        <div class="icon" id="idioma" onclick=cambiarIdioma()>
+            
+            <span class="fi fi-us "></span> <!-- USA (para inglés) -->
+        </div>
+
+    </div>
+    <div class="verde" id="introduccion">
+
+      
+        <div class="introduccion mostrar">
+            Buenas, soy Gustavo, comence a ver esto de programacion desde.. 2020 creo,
+            viendo videos, empezando un curso, y luego inscribiendome a una tecnicatura en desarrollo web,
+            tengo mas afinidad con el frontend que con el backend, aunque sé como funciona,
+            tambien me interesa diseñar diagramas teniendo en cuenta el UML (Unified Modeling Language)
+        </div>
+
+
+        <div class="introduccion-ingles oculto">
+            Hello, im Gustavo, i started to check about programming since.. 2020 i think,
+            watching videos, starting a course, and then sign on into a technical degree in web development,
+            i have more affinity with frontend than backend, but i know how it works,
+            im also interested in desing diagrams with UML(Unified Modeling Language)
+        </div>
+       
+  
+    </div>
+
+    
+    <h2> Click en las imagenes para mas info  </h2>
+
+    <div class=" " id="portafolioMain">
+        <div id="CodoACodo" class="proyecto" >
+
+            <div class="panel-izquierdo" >
+                <img src="./pics/codoacodo.png"  class="imgPanel" alt="grande">
+            </div>
+
+            <div id="fotoPreclick1" class="divFoto">
+                 <div class="tilt-border"></div>
+                <img src="./pics/codoacodo.png" alt="foto de codoAcodo" class="foto"> 
+            </div>
+
+            <div class="panel-derecho" > 
+                <span class="material-icons-outlined cerrar" >
+                close
+                </span>
+                <div class="Descripcion mostrar" >
+                    Mi primer proyecto! me incribi a CodoACodo para saber si esto de la programacion me iria bien
+                    la unica esperiencia que tuve antes fue hacer un semaforo en arduino en mi secundaria,
+                    creo que avance mucho ahora que veo lo simple que era esto, la mayor parte son esquemas ya hechos
+                    por Bootstrap lol, pero bueno por algun lado se comienza, solo el frontend esta hecho.
+                    <br>
+                    <a href="https://t4k020.github.io.">https://t4k020.github.io. </a>
+
+                </div>
+
+                <div class="DescripcionIngles oculto">
+                
+                    My first Proyect! i went into a web development course to know if im good at programming,
+                    the only experience i had before was making a traffic light in arduino,
+                    i think i learned a lot since this proyect, well most of these parts were already made by boostrap lol,
+                    oh well you start somewhere, only the frontend is done.
+                    <br>
+                    <a href="https://t4k020.github.io.">https://t4k020.github.io. </a>
+                 
+                </div>  
+            </div>  
+        
+        </div>
+        <div id="Explora" class="proyecto">
+
+            <div class="panel-izquierdo">
+                <img src="./pics/explora.png" class="imgPanel" alt="grande">
+            </div>
+
+            <div id="fotoPreclick2" class="divFoto">
+                <div class="tilt-border"></div>
+                <img src="./pics/explora.png"  class="foto"> 
+            </div>
+
+
+            <div class="panel-derecho" > 
+                <span class="material-icons-outlined cerrar"  >
+                close
+                </span>
+                <div class="Descripcion mostrar">
+            
+                    Mi trabajo y el de 4 compañeros mas para Diseño grafico en la web, sin codigo porque solo se
+                    enfocaba en lo visual, aca fue cuando me empezo a gustar mas diseñar en el frontend que codear en general,
+                    tambien fue mi primer proyecto grupal, me gusto diseñar en equipo y compartir nuestras ideas mientras 
+                    desarrollamos el trabajo.
+
+                    Se trata de una web para compartir equipamiento de cualquier tipo en Mendoza, tambien podias incribirte
+                    a actividades, si pagabas o no el equipamiento era un acuerdo entre vos y quien te lo prestaba, la pagina
+                    te daba acceso a un chat para su comunicacion.
+                    <br>
+
+                    Antes del diseño se hizo un Brief.
+
+                    <br>
+                    <a href="./pics/exploraCompleto.jpg">Imagen de la main page </a>
+                    <br>
+                    Tambien estan diseñadas las otras paginas pero esta me parece la mas importante
+                  
+                </div>
+
+                <div class="DescripcionIngles oculto">
+               
+
+                    My work with 4 partners for graphic design, codeless because this was visual-focused, this is were i started 
+                    to like design in frontend more than coding in general, it was also my first group project, it was fun
+                    to design with a team and share our ideas while developing.
+
+                    This website is about sharing any kind of equipment in Mendoza, you could also sign on to do
+                    activities, if you pay or not for the equipment is up to the vendor and you, the page would give you a 
+                    chat for the Communication.
+                    <br>
+
+                    Before the design a Brief was made
+                    <br>
+                    <a href="./pics/exploraCompleto.jpg">Main page image </a>
+                    <br>
+                    
+                    The other pages are also designed but this one its the most important for me.
+                
+                </div>  
+            </div> 
+        </div>
+        <div id="Wii" class="proyecto">
+
+            <div class="panel-izquierdo">
+                <img src="./pics/info wii final.png" class="imgPanel" alt="grande">
+            </div>
+
+            <div id="fotoPreclick3" class="divFoto">
+                <img src="./pics/info wii final.png" alt="foto de codoAcodo" class="foto"> 
+            </div>
+
+            <div class="panel-derecho">
+                <span class="material-icons-outlined cerrar"  >
+                close
+                </span>
+
+           
+                <div class="Descripcion mostrar">
+                    
+                
+                    Una infografia de la Wii, al principio queria que se tratara de los botones y explicar uno por uno 
+                    la decision de porque estaban ahi, al final me decidi por explicar las decisiones de diseño que tomaron
+                    teniendo en cuenta que querian como publico a todos, adultos y niños por igual.
+                    <br>
+                    <a href="./pics/info wii final.png">Imagen completa </a>
+                
+                </div>  
+
+                <div class="DescripcionIngles oculto">
+                
+                    An infographic about the Wii, i wanted to talk about each of the buttons and explain why they were there,
+                    but i decided to talk about the design taking into account that they wanted as an audience kids and adults.
+                    <br>
+                    <a href="./pics/info wii final.png">Full image </a>
+                
+                </div>
+
+             </div>
+
+
+        </div>
+
+        <div id="FormAr" class="proyecto">
+
+            <div class="panel-izquierdo">
+                <img src="./pics/formAr.png" class="imgPanel" alt="grande">
+            </div>
+
+            <div id="fotoPreclick4" class="divFoto"> 
+                <img src="./pics/formAr.png" alt="foto de Formar" class="foto"> 
+            </div>
+
+
+            <div class="panel-derecho">
+                <span class="material-icons-outlined cerrar" >
+                close
+                </span>
+                <div class="Descripcion mostrar">
+                
+                    Otro trabajo en grupo con 3 personas, esta vez es una plataforma de educacion, en donde se enfoca en usar 
+                    metodologias de estudio para ayudar al usuario, + un chatbot que te da pistas en vez de ayudarte(esto quedo como
+                    concepto, no fue hecho)
+
+                    <a href="https://t4k020.github.io.">https://github.com/Leandro-hub24/vei-tp-final </a>
+
+                   
+                
+                </div>  
+
+                <div class="DescripcionIngles oculto">
+                
+    
+                    Another project made with 3 people, this time its a website about education, where we focused on 
+                    study methodologies to help the user, + an chatbot that gives you clues instead of giving the answer 
+                    (this was a concept, it was not made)
+
+                    <a href="https://t4k020.github.io.">https://github.com/Leandro-hub24/vei-tp-final </a>
+
+                </div> 
+            </div> 
+        </div> 
+        
+       
+        <div id="Brainrot" class="proyecto">
+            <div class="panel-izquierdo">
+                <img src="./pics/brainrot.png" class="imgPanel" alt="grande">
+            </div>
+
+
+            <div id="fotoPreclick5" class="divFoto">
+                <img src="./pics/brainrot.png" alt="foto de codoAcodo" class="foto"> 
+            </div>
+
+            <div class="panel-derecho">
+                <span class="material-icons-outlined cerrar" >
+                close
+                </span>
+                <div class="Descripcion mostrar">
+                
+                    Hecho con 3 personas mas, este fue mi primer estudio profundo en Spring y comprendi porque
+                    hay controladores, servicios y repositorios, mas que nada para ordenar.
+                    Tambien se aplico la construccion de codigo comenzando por los test (TDD: test development driven).. al principio 
+                    y tambien use websockets para la parte multijugador.
+                    <a href="https://t4k020.github.io.">https://github.com/Leandro-hub24/tallerwebi-grupo3 </a>
+
+                
+                </div>  
+
+                <div class="DescripcionIngles oculto">
+                
+    
+                    Made with 3 more people, this was my first deep study into Spring an i learned why 
+                    there are controllers, services and repositories, just to order the code.
+                    and we applied TTD(Test development Driven)... at first,
+                    finally i used websockets for multiplayer
+
+                    <a href="https://t4k020.github.io.">https://github.com/Leandro-hub24/tallerwebi-grupo3 </a>
+
+                
+                </div> 
+            </div>
+        
+        </div>
+
+    </div>
+
+
+    
+
+    <script src="portafolioWeb.js"></script>
+</body>
+</html>
