@@ -44,9 +44,41 @@ document.querySelectorAll(".proyecto").forEach(proyecto => {
   });
 });
 
+document.querySelectorAll(".DER").forEach(DER => {
+  let fotoDiv = DER.querySelector(".preclick"); 
+  let descripcion = DER.querySelector(".Descripcion"); 
+  let descripcionEng = DER.querySelector(".DescripcionIngles"); 
+  let panelIzq = DER.querySelector(".panel-izquierdo");  
+  let panelImg = DER.querySelector(".imgPanel");
+  let panelDer = DER.querySelector(".panel-derecho");
+
+  fotoDiv.addEventListener("click", () => {
+    let src = fotoDiv.getAttribute("src");
+
+   
+    panelIzq.classList.add("active");
+    panelDer.classList.add("active");
+
+   
+  });
+
+  DER.querySelector(".cerrar")?.addEventListener("click", () => {
+    panelIzq.classList.remove("active");
+    panelDer.classList.remove("active");
+  
+
+
+  });
+});
+
 function cambiarIdioma() {
 
   document.querySelectorAll(".introduccion").forEach(el => {
+    el.classList.toggle("oculto");
+    el.classList.toggle("mostrar");
+  });
+
+  document.querySelectorAll(".texto").forEach(el => {
     el.classList.toggle("oculto");
     el.classList.toggle("mostrar");
   });

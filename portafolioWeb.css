@@ -228,6 +228,40 @@ a{
   color: rgb(0, 0, 0);
 }
 
+.botonConTexto{
+  background-color: rgb(117, 255, 137);
+  z-index: 2;
+  padding: 1em 2em;
+  border-radius: 15px;
+  border: 4px solid #5A189A;
+  width: 90%;
+  text-align: center;
+  font-size: larger;
+  transition: transform 0.2s ease;
+  
+    
+}
+
+.botonConTexto:hover{
+  transform: scale(1.08); 
+  border: 4px solid #5A189A;
+  border-width: 90%;
+  cursor: pointer;
+  
+}
+
+.texto{
+  text-align: center;
+  
+}
+
+.pequenio{
+  font-size: 15px;
+}
+.imgpequenio{
+  width: fit-content;
+}
+
 #sideNav {
   position: fixed;
   top: 0;
@@ -257,4 +291,13 @@ a{
   justify-content: center;
   width: 100%;
   object-fit: cover; 
+}
+
+#botonesTexto{
+  display: flex;
+  flex-wrap: wrap; 
+  column-gap: 5rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+  
 }

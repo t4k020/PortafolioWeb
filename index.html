@@ -31,7 +31,7 @@
 
         <div class="icon" id="idioma" onclick=cambiarIdioma()>
             
-            <span class="fi fi-us "></span> <!-- USA (para inglés) -->
+            <span class="fi fi-us "></span>
         </div>
 
     </div>
@@ -57,7 +57,14 @@
     </div>
 
     
-    <h2> Click en las imagenes para mas info  </h2>
+         <div class="texto mostrar">
+            <h2>Click en las imagenes para mas info</h2>
+        </div>
+
+
+        <div class="texto oculto">
+            <h2>Click on the images for more info</h2>
+        </div>
 
     <div class=" " id="portafolioMain">
         <div id="CodoACodo" class="proyecto" >
@@ -81,7 +88,7 @@
                     creo que avance mucho ahora que veo lo simple que era esto, la mayor parte son esquemas ya hechos
                     por Bootstrap lol, pero bueno por algun lado se comienza, solo el frontend esta hecho.
                     <br>
-                    <a href="https://t4k020.github.io.">https://t4k020.github.io. </a>
+                    <a href="https://t4k020.github.io."> Pagina web. </a>
 
                 </div>
 
@@ -92,7 +99,7 @@
                     i think i learned a lot since this proyect, well most of these parts were already made by boostrap lol,
                     oh well you start somewhere, only the frontend is done.
                     <br>
-                    <a href="https://t4k020.github.io.">https://t4k020.github.io. </a>
+                    <a href="https://t4k020.github.io."> Webpage. </a>
                  
                 </div>  
             </div>  
@@ -218,9 +225,13 @@
                     Otro trabajo en grupo con 3 personas, esta vez es una plataforma de educacion, en donde se enfoca en usar 
                     metodologias de estudio para ayudar al usuario, + un chatbot que te da pistas en vez de ayudarte(esto quedo como
                     concepto, no fue hecho)
+                    <br>
 
-                    <a href="https://t4k020.github.io.">https://github.com/Leandro-hub24/vei-tp-final </a>
-
+                    <a href="https://github.com/Leandro-hub24/vei-tp-final">Repositorio del proyecto </a>
+                    <br>
+                    <a href="https://leandro-hub24.github.io/vei-tp-final/">Pagina web </a>
+                    
+                   
                    
                 
                 </div>  
@@ -231,8 +242,11 @@
                     Another project made with 3 people, this time its a website about education, where we focused on 
                     study methodologies to help the user, + an chatbot that gives you clues instead of giving the answer 
                     (this was a concept, it was not made)
+                    <br>
+                    <a href="https://github.com/Leandro-hub24/vei-tp-final"> github proyect </a>
+                    <br>
+                    <a href="https://leandro-hub24.github.io/vei-tp-final/">Webpage </a>
 
-                    <a href="https://t4k020.github.io.">https://github.com/Leandro-hub24/vei-tp-final </a>
 
                 </div> 
             </div> 
@@ -259,7 +273,7 @@
                     hay controladores, servicios y repositorios, mas que nada para ordenar.
                     Tambien se aplico la construccion de codigo comenzando por los test (TDD: test development driven).. al principio 
                     y tambien use websockets para la parte multijugador.
-                    <a href="https://t4k020.github.io.">https://github.com/Leandro-hub24/tallerwebi-grupo3 </a>
+                    <a href="https://github.com/Leandro-hub24/tallerwebi-grupo3">repositorio del proyecto </a>
 
                 
                 </div>  
@@ -272,7 +286,7 @@
                     and we applied TTD(Test development Driven)... at first,
                     finally i used websockets for multiplayer
 
-                    <a href="https://t4k020.github.io.">https://github.com/Leandro-hub24/tallerwebi-grupo3 </a>
+                    <a href="https://github.com/Leandro-hub24/tallerwebi-grupo3">github proyect </a>
 
                 
                 </div> 
@@ -281,6 +295,173 @@
         </div>
 
     </div>
+
+    <div id="tituloDB">
+        <div class="texto mostrar">
+            <h2>Diagramas de entidad-relacion y Modelo relacional</h2>
+        </div>
+
+
+        <div class="texto oculto">
+            <h2>Entity-relation diagram and relational  model</h2>
+        </div>
+     </div>
+    <div  id="botonesTexto">
+
+        <div id="DER" class="DER">
+
+            <div class="panel-izquierdo">
+                <img src="./DB/Energia_electrica.png" class="imgPanel imgpequenio" alt="grande">
+            </div>
+
+
+            <div id="preclick" class="botonConTexto preclick ">
+                <div class="texto mostrar">
+                    <h3>Produccion electrica</h3>
+                </div>
+
+
+                <div class="texto oculto">
+                    <h3>Electric production</h3>
+                </div>
+            </div>
+
+            <div class="panel-derecho">
+                <span class="material-icons-outlined cerrar" >
+                close
+                </span>
+                <div class="Descripcion mostrar pequenio">
+                
+                  
+
+                    La Secretaría de Energía desea almacenar información del servicio de energía eléctrica del país. Existen productores básicos de electricidad que se identifican por un nombre de los cuales nos interesa su producción media, máxima y fecha de entrada en funcionamiento. Estos productores básicos son de una de las siguientes categorías: Hidroeléctrica, solar, nuclear o térmica. De una central hidroeléctrica nos interesa saber su ocupación, capacidad máxima y número de turbinas. De una solar nos interesa saber la superficie total ocupada por los paneles, la cantidad de paneles y la media anual de horas al sol. De una central nuclear nos interesa almacenar el número de reactores, el volumen de plutonio consumido y el de residuos nucleares que produce. De una central térmica nos interesa el número de hornos que posee, el volumen de carbón consumido y el volumen de emisiones de gases.
+                    Además, por motivos de seguridad, nos interesa controlar el plutonio del que se provee a una central nuclear. Este control se refiere a la cantidad de plutonio que compra la central a cada uno de sus proveedores (de ellos, deseamos almacenar el nombre y país) y el transportista por el cual se envía (de ellos deseamos almacenar el nombre y el número de matrícula internacional). Se debe considerar que un proveedor puede suministrar plutonio a diferentes centrales nucleares y que cada compra puede ser trasladada por un transportista diferente.
+                    Cada día, los productores entregan la energía producida a una o varias estaciones primarias, las cuales pueden recibir una cantidad distinta de cada uno de estos productores. Las estaciones primarias se identifican con un nombre, poseen un determinada cantidad de transformadores de baja, de alta tensión y son cabecera de una o varias redes de distribución.
+                    Una red de distribución se identifica por un número de red y solo puede tener una estación primaria como cabecera. La propiedad de una red de distribución puede ser compartida por varias compañías eléctricas. A cada compañía eléctrica, se le identifica por su nombre.
+                    La energía sobrante en una de las redes puede enviarse a otra red. Se registra el volumen total de energía intercambiada entre las 2 redes.
+                    Una red está compuesta por una serie de líneas y cada línea se identifica por un número secuencial dentro del número de red. Además, posee una determinada longitud. Las líneas abastecerán diferentes subestaciones. Una subestación es abastecida solo por una línea y distribuye a una o varias zonas de servicio. A tales efectos, las provincias (De ellos, deseamos almacenar solo código y el nombre) se encuentran divididas en zonas de servicio, aunque no puede haber zonas de servicio que pertenezcan a más de una provincia. Cada zona de servicio puede ser atendida por más de una subestación.
+                    En cada zona de servicio se desea registrar el consumo medio y el número de consumidores finales de cada una de las siguientes categorías: Particulares, empresas e instituciones
+                   <a href="./DB/Energia_electrica.png">Imagen completa </a>
+
+                
+                </div>  
+
+                <div class="DescripcionIngles oculto">
+                
+    
+                    The Secretariat of Energy wishes to store information regarding the country's electrical power service. There are basic electricity producers identified by a name, for which we track their average production, maximum production, and startup date. These basic producers fall into one of the following categories: Hydroelectric, Solar, Nuclear, or Thermal.
+                    For hydroelectric plants, we track occupancy, maximum capacity, and number of turbines.
+                    For solar plants, we record the total surface area occupied by panels, the number of panels, and the annual average of sunshine hours.
+                    For nuclear plants, we store the number of reactors, the volume of plutonium consumed, and the nuclear waste produced.
+                    For thermal plants, we track the number of furnaces, the volume of coal consumed, and gas emission levels.
+                    Additionally, for security reasons, we must monitor the plutonium supply for nuclear plants. This includes the quantity of plutonium purchased from each supplier (storing their name and country) and the transporter responsible for the shipment (storing their name and international registration number). A supplier may provide plutonium to different nuclear plants, and each purchase may be moved by a different transporter.
+                    Every day, producers deliver energy to one or more primary stations, which can receive varying amounts from each producer. Primary stations are identified by a name, possess a specific number of low-voltage and high-voltage transformers, and serve as the head of one or more distribution networks.
+                    A distribution network is identified by a network number and can only have one primary station as its head. Ownership of a distribution network can be shared among several electric companies, each identified by its name. Surplus energy from one network can be sent to another; the total volume of exchanged energy between the two networks must be recorded.
+                    A network consists of a series of lines, each identified by a sequential number within the network and its length. These lines supply various substations. A substation is supplied by only one line and distributes to one or more service zones. For these purposes, provinces (identified by code and name) are divided into service zones, though a service zone cannot belong to more than one province. Each service zone can be served by multiple substations.
+                    In each service zone, we record the average consumption and the number of end consumers in the following categories: Individuals, Businesses, and Institutions.
+                    <a href="./DB/Energia_electrica.png">Full image </a>
+                </div> 
+            </div> 
+           
+                
+        </div>
+
+                <div id="DER" class="DER">
+
+            <div class="panel-izquierdo">
+                <img src="./DB/juegoMovil.png" class="imgPanel imgpequenio" alt="grande">
+            </div>
+
+
+            <div id="preclick" class="botonConTexto preclick ">
+                <div class="texto mostrar">
+                    <h3>Juego de movil</h3>
+                </div>
+
+
+                <div class="texto oculto">
+                    <h3>Mobile game</h3>
+                </div>
+            </div>
+
+            <div class="panel-derecho">
+                <span class="material-icons-outlined cerrar" >
+                close
+                </span>
+                <div class="Descripcion mostrar pequenio">
+                
+                  
+
+                    Las personas que quieran jugar deben dar de alta una cuenta proveyendo un email, celular, nombre de usuario, contraseña y se registrarán además la fecha de creación de ésta y fecha y hora de última conexión. Por cada cuenta, se genera una única Colonia cuyo Gobernador es el principal protagonista de la historia, que debe mantener a salvo a los integrantes de la misma. Es importante registrar su ID, nombre, el poder acumulado al momento (es la suma del poder actual de cada héroe activo que tienen), la alianza a la que pertenece (si se ha unido a alguna) y la región. Cada gobernador tiene un equipo específico de atributos que puede constar de vestimenta, anillo de poder, báculo, etc. Cada equipo específico de gobernador registra una cantidad de estrellas, un porcentaje de bonificación y un nivel de talismán y una rareza (común, poco común, raro, épico y mítico). También se le puede asociar un avatar.
+                    En cuanto a los personajes o héroes del ejército del gobernador, tienen un nombre, un seniority, un arma, habilidades, una cantidad de estrellas, una cantidad de poder acumulado (que va mejorando con la experiencia), una cantidad de escoltas y capacidad de tropas. También tienen una especialidad y talento y un nivel alcanzado hasta el momento. Sucede que, dentro del juego, cada gobernador puede tener los mismos héroes, por ello se los identificará con el ID del gobernador y el código de héroe.
+                    Cada personaje tiene un equipo que usa para potenciarse que puede constar de gafas, calzado, cinturón y guantes.
+                    Cada equipo de héroe tiene una especialidad, y un nivel, así como un color que indica la rareza tal como sucede con el equipo de gobernador.
+                    El dispositivo más importante que es responsabilidad del gobernador es la estufa o calentador de la colonia, que es el encargado de generar el calor, la energía y garantiza la supervivencia de quienes viven en ella. El mismo tiene un nivel de calor, costo en términos de cantidad de carbón que consume, potencia máxima y si está encendido o apagado. Sólo hay un calefactor por Colonia.                 
+                    <a href="./DB/juegoMovil.png">imagen completa </a>
+                
+                </div>  
+
+                <div class="DescripcionIngles oculto">
+                
+    
+                    Those who wish to play must create an account by providing an email address, mobile phone number, username, and password. The account creation date and the date and time of the last login will also be recorded. Each account generates a single Colony whose Governor is the main protagonist of the story, responsible for keeping its members safe. It is important to register their ID, name, current accumulated power (the sum of the current power of each active hero), the alliance they belong to (if they have joined one), and the region. Each Governor has a specific set of attributes, which may include clothing, a ring of power, a staff, etc. Each Governor's specific set has a number of stars, a bonus percentage, a talisman level, and a rarity (common, uncommon, rare, epic, and mythic). An avatar can also be associated with the Governor.
+                    As for the governor's army characters or heroes, they have a name, seniority, weapon, skills, a star rating, accumulated power (which improves with experience), a number of escorts, and troop capacity. They also have a specialty, talent, and a current level. Within the game, each governor can have the same heroes, so they are identified by the governor's ID and hero code.
+                    Each character has equipment that they use to enhance their abilities, which may consist of goggles, footwear, a belt, and gloves.
+                    Each hero's equipment has a specialty, a level, and a color that indicates its rarity, just like the governor's equipment.
+                    The most important device under the governor's responsibility is the colony's stove or heater, which generates heat and energy, ensuring the survival of its inhabitants. It has a heat output level, a cost in terms of coal consumption, a maximum power level, and is either on or off. There is only one heater per colony. 
+                     <a href="./DB/juegoMovil.png">Full image </a>
+                </div> 
+            </div> 
+           
+                
+        </div>
+
+                <div id="DER" class="DER">
+
+            <div class="panel-izquierdo">
+                <img src="./DB/ingenieriaInversa.png" class="imgPanel imgpequenio" alt="grande">
+            </div>
+
+
+            <div id="preclick" class="botonConTexto preclick ">
+                <div class="texto mostrar">
+                    <h3>Ingenieria inversa</h3>
+                </div>
+
+
+                <div class="texto oculto">
+                    <h3>Reverse engineering</h3>
+                </div>
+            </div>
+
+            <div class="panel-derecho">
+                <span class="material-icons-outlined cerrar" >
+                close
+                </span>
+                <div class="Descripcion mostrar pequenio">
+                
+                  
+                    Es un ejercicio en donde primero vemos el modelo relacional para luego hacer el diagrama entidad-relacion
+                     <a href="./DB/ingenieriaInversa.png">Imagen completa </a>
+
+                
+                </div>  
+
+                <div class="DescripcionIngles oculto">
+                    this is an exercise where we make the entity-relation diagram based on the given relational model
+                  <a href="./DB/ingenieriaInversa.png">Full image</a>
+                </div> 
+            </div> 
+           
+                
+        </div>
+
+
+
+
+    </div>
+    
+
 
 
     
